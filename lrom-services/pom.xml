@@ -11,47 +11,75 @@
 
   <artifactId>lrom-services</artifactId>
 
+  <properties>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <jacoco.version>0.8.8</jacoco.version>
+  </properties>
+
   <dependencies>
-    <!-- يعتمد على repository للوصول إلى البيانات -->
+    <!-- Modules -->
+    <dependency>
+      <groupId>com.restaurant</groupId>
+      <artifactId>lrom-domain</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
+
     <dependency>
       <groupId>com.restaurant</groupId>
       <artifactId>lrom-repository</artifactId>
-      <version>${project.version}</version>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
 
-    <!-- JUnit لاختبار الوحدة -->
+    <!-- JUnit & Mockito -->
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
-      <version>5.8.2</version>
+      <version>5.10.2</version>
       <scope>test</scope>
     </dependency>
 
-    <!-- Mockito للاختبارات المعتمدة على Mocking -->
     <dependency>
       <groupId>org.mockito</groupId>
       <artifactId>mockito-core</artifactId>
-      <version>4.0.0</version>
+      <version>5.12.0</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
 
   <build>
     <plugins>
-      <!-- JaCoCo Plugin لتوليد تقرير التغطية -->
+      <!-- Compiler -->
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.11.0</version>
+        <configuration>
+          <release>17</release>
+        </configuration>
+      </plugin>
+
+      <!-- Surefire for JUnit -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.1.2</version>
+        <configuration>
+          <useModulePath>false</useModulePath>
+        </configuration>
+      </plugin>
+
+      <!-- JaCoCo Plugin -->
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.8</version>
+        <version>${jacoco.version}</version>
         <executions>
-          <!-- تفعيل جمع التغطية قبل الاختبارات -->
           <execution>
-            <id>prepare-agent</id>
             <goals>
               <goal>prepare-agent</goal>
             </goals>
           </execution>
-          <!-- توليد التقرير بعد الاختبارات -->
           <execution>
             <id>report</id>
             <phase>verify</phase>
@@ -62,11 +90,11 @@
         </executions>
       </plugin>
 
-      <!-- Surefire Plugin لتشغيل اختبارات JUnit -->
+      <!-- Sonar Plugin -->
       <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.1.2</version>
+        <groupId>org.sonarsource.scanner.maven</groupId>
+        <artifactId>sonar-maven-plugin</artifactId>
+        <version>3.10.0.2594</version>
       </plugin>
     </plugins>
   </build>
