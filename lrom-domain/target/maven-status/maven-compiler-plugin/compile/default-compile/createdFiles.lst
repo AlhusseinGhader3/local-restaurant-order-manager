@@ -1,0 +1,6 @@
+com\restaurant\model\CookingScheduler.class
+com\restaurant\model\Order.class
+com\restaurant\model\MenuItem.class
+com\restaurant\model\Reservation.class
+com\restaurant\model\Invoice.class
+com\restaurant\model\Table.class

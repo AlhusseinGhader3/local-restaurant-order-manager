@@ -1,0 +1,12 @@
+/target/
+/.idea/
+/*.iml
+.mvn/
+/.settings/
+/.classpath
+.project
+/.vscode/
+/out/
+dependency-reduced-pom.xml
+/logs/
+/test-output/

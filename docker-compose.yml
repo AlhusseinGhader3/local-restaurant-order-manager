@@ -1,0 +1,10 @@
+services:
+  srom-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: smart-restaurant-order-manager
+    image: smart-restaurant-order-manager:latest
+    stdin_open: true
+    tty: true
+

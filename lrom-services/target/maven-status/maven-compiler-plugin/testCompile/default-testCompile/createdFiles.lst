@@ -1,0 +1,8 @@
+com\restaurant\service\TableServiceNegativeTest.class
+com\restaurant\service\ReservationServiceNegativeTest.class
+com\restaurant\service\OrderServiceNegativeTest.class
+com\restaurant\service\ReservationServiceTest.class
+com\restaurant\service\TableServiceTest.class
+com\restaurant\service\MenuItemServiceTest.class
+com\restaurant\service\MenuItemServiceNegativeTest.class
+com\restaurant\service\OrderServiceTest.class

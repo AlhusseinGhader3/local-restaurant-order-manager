@@ -1,0 +1,5 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+lrom-services,com.restaurant.service,ReservationService,0,19,0,0,0,7,0,3,0,3
+lrom-services,com.restaurant.service,TableService,0,19,0,0,0,7,0,3,0,3
+lrom-services,com.restaurant.service,MenuItemService,0,19,0,0,0,7,0,3,0,3
+lrom-services,com.restaurant.service,OrderService,0,19,0,0,0,7,0,3,0,3
