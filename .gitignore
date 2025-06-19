@@ -1,12 +1,46 @@
-/target/
-/.idea/
-/*.iml
-.mvn/
-/.settings/
-/.classpath
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/timing.properties
+log/
+
+# IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+*.class
+
+# Logs and reports
+*.log
+*.out
+*.tmp
+*.swp
+
+# JaCoCo Reports
+**/target/site/jacoco/
+
+# PIT Reports
+**/target/pit-reports/
+
+# Surefire test reports
+**/target/surefire-reports/
+
+# Sonar
+.sonar/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Eclipse specific
+.settings/
 .project
-/.vscode/
-/out/
-dependency-reduced-pom.xml
-/logs/
-/test-output/
+.classpath
+
+# VS Code
+.vscode/
+
+# Build tool wrappers
+.gradle/
+build/

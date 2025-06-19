@@ -1,8 +1,0 @@
-com\restaurant\repository\ReservationRepository.class
-com\restaurant\repository\InMemoryMenuItemRepository.class
-com\restaurant\repository\InMemoryTableRepository.class
-com\restaurant\repository\InMemoryReservationRepository.class
-com\restaurant\repository\TableRepository.class
-com\restaurant\repository\InMemoryOrderRepository.class
-com\restaurant\repository\OrderRepository.class
-com\restaurant\repository\MenuItemRepository.class
