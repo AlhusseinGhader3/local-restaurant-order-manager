@@ -39,4 +39,13 @@ public class OrderServiceTest {
         assertNotNull(orders);
         assertEquals(0, orders.size());
     }
+
+    @Test
+    public void testCreateOrder_NullOrder_ShouldThrowException() {
+        Exception exception = assertThrows(NullPointerException.class, () -> {
+            orderService.createOrder(null);
+        });
+        assertEquals("Order cannot be null", exception.getMessage());
+    }
+
 }

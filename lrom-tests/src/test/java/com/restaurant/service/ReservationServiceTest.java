@@ -40,4 +40,13 @@ public class ReservationServiceTest {
         assertNotNull(reservations);
         assertEquals(0, reservations.size());
     }
+
+    @Test
+    public void testCreateReservation_NullReservation_ShouldThrowException() {
+        Exception exception = assertThrows(NullPointerException.class, () -> {
+            reservationService.createReservation(null);
+        });
+        assertEquals("Reservation cannot be null", exception.getMessage());
+    }
+
 }

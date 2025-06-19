@@ -32,10 +32,19 @@ public class TableServiceTest {
     }
 
     @Test
+    public void testAddTable_NullTable_ShouldThrowException() {
+        Exception exception = assertThrows(NullPointerException.class, () -> {
+            tableService.addTable(null);
+        });
+        assertEquals("Table cannot be null", exception.getMessage());
+    }
+
+    @Test
     public void testGetAllTables() {
         when(tableRepository.findAll()).thenReturn(Collections.emptyList());
         List<Table> tables = tableService.getAllTables();
         assertNotNull(tables);
         assertEquals(0, tables.size());
     }
+
 }

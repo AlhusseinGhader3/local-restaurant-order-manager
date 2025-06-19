@@ -34,6 +34,14 @@ public class MenuItemServiceTest {
     }
 
     @Test
+    public void testAddMenuItem_NullItem_ShouldThrowException() {
+        Exception exception = assertThrows(NullPointerException.class, () -> {
+            menuItemService.addMenuItem(null);
+        });
+        assertEquals("MenuItem cannot be null", exception.getMessage());
+    }
+
+    @Test
     public void testGetAllMenuItems() {
         when(menuItemRepository.findAll()).thenReturn(Collections.emptyList());
         List<MenuItem> items = menuItemService.getAllMenuItems();
