@@ -1,8 +1,8 @@
-C:\Users\Alhussienghader\Desktop\smart-restaurant-order-manager-final\lrom-repository\src\main\java\com\restaurant\repository\InMemoryReservationRepository.java
-C:\Users\Alhussienghader\Desktop\smart-restaurant-order-manager-final\lrom-repository\src\main\java\com\restaurant\repository\InMemoryMenuItemRepository.java
-C:\Users\Alhussienghader\Desktop\smart-restaurant-order-manager-final\lrom-repository\src\main\java\com\restaurant\repository\InMemoryOrderRepository.java
-C:\Users\Alhussienghader\Desktop\smart-restaurant-order-manager-final\lrom-repository\src\main\java\com\restaurant\repository\OrderRepository.java
-C:\Users\Alhussienghader\Desktop\smart-restaurant-order-manager-final\lrom-repository\src\main\java\com\restaurant\repository\TableRepository.java
-C:\Users\Alhussienghader\Desktop\smart-restaurant-order-manager-final\lrom-repository\src\main\java\com\restaurant\repository\InMemoryTableRepository.java
-C:\Users\Alhussienghader\Desktop\smart-restaurant-order-manager-final\lrom-repository\src\main\java\com\restaurant\repository\MenuItemRepository.java
-C:\Users\Alhussienghader\Desktop\smart-restaurant-order-manager-final\lrom-repository\src\main\java\com\restaurant\repository\ReservationRepository.java
+C:\Users\Alhussienghader\Desktop\local-restaurant-order\lrom-repository\src\main\java\com\restaurant\repository\ReservationRepository.java
+C:\Users\Alhussienghader\Desktop\local-restaurant-order\lrom-repository\src\main\java\com\restaurant\repository\TableRepository.java
+C:\Users\Alhussienghader\Desktop\local-restaurant-order\lrom-repository\src\main\java\com\restaurant\repository\OrderRepository.java
+C:\Users\Alhussienghader\Desktop\local-restaurant-order\lrom-repository\src\main\java\com\restaurant\repository\InMemoryOrderRepository.java
+C:\Users\Alhussienghader\Desktop\local-restaurant-order\lrom-repository\src\main\java\com\restaurant\repository\InMemoryTableRepository.java
+C:\Users\Alhussienghader\Desktop\local-restaurant-order\lrom-repository\src\main\java\com\restaurant\repository\MenuItemRepository.java
+C:\Users\Alhussienghader\Desktop\local-restaurant-order\lrom-repository\src\main\java\com\restaurant\repository\InMemoryMenuItemRepository.java
+C:\Users\Alhussienghader\Desktop\local-restaurant-order\lrom-repository\src\main\java\com\restaurant\repository\InMemoryReservationRepository.java
